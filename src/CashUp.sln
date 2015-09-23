@@ -3,8 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{DA5CC7E3-FBCC-4EC4-9C6F-713FAA9B1AC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3BFD5C3C-E5F0-48ED-BD7F-D4F2800CCBC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{64CF7833-3979-45F1-9665-1C197C263419}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{279538A5-3BF2-46A9-A089-A7DF7D78B53E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployments", "Deployments", "{9FCBC5CF-05E7-455D-A1FF-D2E19548A712}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E7F49D30-9C75-49F1-945E-E9482764B83D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Contracts", "Infrastructure\Domain.Contracts\Domain.Contracts.csproj", "{359908E3-C29A-422A-95C1-EFBF176C8683}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{359908E3-C29A-422A-95C1-EFBF176C8683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359908E3-C29A-422A-95C1-EFBF176C8683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359908E3-C29A-422A-95C1-EFBF176C8683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359908E3-C29A-422A-95C1-EFBF176C8683}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{359908E3-C29A-422A-95C1-EFBF176C8683} = {3BFD5C3C-E5F0-48ED-BD7F-D4F2800CCBC6}
 	EndGlobalSection
 EndGlobal
