@@ -7,8 +7,8 @@
     <ProjectGuid>{5B0D2DEB-AA78-43A3-8471-19CB2241A962}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ApplicationRegistration</RootNamespace>
-    <AssemblyName>ApplicationRegistration</AssemblyName>
+    <RootNamespace>CashUp.Domain.Applications.Handlers</RootNamespace>
+    <AssemblyName>CashUp.Domain.Applications.Handlers.ApplicationRegistration</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,6 +41,16 @@
   <ItemGroup>
     <Compile Include="ApplicationRegistration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Infrastructure\Domain.Contracts\Domain.Contracts.csproj">
+      <Project>{359908e3-c29a-422a-95c1-efbf176c8683}</Project>
+      <Name>Domain.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Commands\PlaceApplication\PlaceApplication.csproj">
+      <Project>{f33af2ff-46af-4ddd-bcf1-a3bf5e19bb1c}</Project>
+      <Name>PlaceApplication</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
