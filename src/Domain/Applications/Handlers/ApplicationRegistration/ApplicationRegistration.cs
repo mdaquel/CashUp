@@ -1,7 +1,7 @@
 ﻿using CashUp.Domain.Applications.Commands;
 using Domain.Contracts;
 
-namespace ApplicationRegistration
+namespace CashUp.Domain.Applications.Handlers
 {
     public class ApplicationRegistration : IHandleMessage<PlaceApplication>
     {

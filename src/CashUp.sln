@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationPlaced", "Domain
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationRegistration", "Domain\Applications\Handlers\ApplicationRegistration\ApplicationRegistration.csproj", "{5B0D2DEB-AA78-43A3-8471-19CB2241A962}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationAssessment", "Domain\Applications\Handlers\ApplicationAssessment\ApplicationAssessment.csproj", "{FAEBF163-B76F-441D-AE6B-E43929632B28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{5B0D2DEB-AA78-43A3-8471-19CB2241A962}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B0D2DEB-AA78-43A3-8471-19CB2241A962}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B0D2DEB-AA78-43A3-8471-19CB2241A962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAEBF163-B76F-441D-AE6B-E43929632B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAEBF163-B76F-441D-AE6B-E43929632B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAEBF163-B76F-441D-AE6B-E43929632B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAEBF163-B76F-441D-AE6B-E43929632B28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,5 +72,6 @@ Global
 		{F33AF2FF-46AF-4DDD-BCF1-A3BF5E19BB1C} = {5D61067B-4830-4323-8C25-EA3F8369DDB7}
 		{A3C77B8F-D25A-4EC2-9E5D-09309D753CEA} = {4F9EAD82-FB46-42AC-B3BB-089F9116B895}
 		{5B0D2DEB-AA78-43A3-8471-19CB2241A962} = {9B04FB87-4F01-41E2-BB3F-434C5B862FA0}
+		{FAEBF163-B76F-441D-AE6B-E43929632B28} = {9B04FB87-4F01-41E2-BB3F-434C5B862FA0}
 	EndGlobalSection
 EndGlobal
