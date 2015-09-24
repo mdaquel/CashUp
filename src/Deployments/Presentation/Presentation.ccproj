@@ -36,6 +36,28 @@
     <ServiceConfiguration Include="ServiceConfiguration.Local.cscfg" />
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Presentation\Web.Admin\Web.Admin.csproj">
+      <Name>Web.Admin</Name>
+      <Project>{87c7d052-cc8a-4651-bc49-413d1a602bdf}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>Web.Admin</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Presentation\Web.Public\Web.Public.csproj">
+      <Name>Web.Public</Name>
+      <Project>{eaf92dbc-3a14-46a2-ac52-71ab7e723ac4}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>Web.Public</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <DiagnosticsConfiguration Include="Web.AdminContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="Web.PublicContent\diagnostics.wadcfgx" />
+  </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
